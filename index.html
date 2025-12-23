@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Character & Chaos Personality Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Start Screen -->
+        <div class="start-screen active">
+            <h1>🎭 Main Character & Chaos Analyzer</h1>
+            <p class="subtitle">Discover Your Personality Type</p>
+            <div class="start-description">
+                <p>WELCOME EVERYBODYYYYYYY !</p>
+                <p style="margin-top: 15px;">Answer 20 fun questions to discover whether you're a Calm Human, Slightly Unhinged, Main Character, or a Final Boss.</p>
+                <p style="margin-top: 15px;">Be honest, be yourself, and most importantly... have fun!</p>
+            </div>
+            <button class="btn" onclick="startQuiz()">Start Quiz</button>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div class="quiz-screen">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressBar"></div>
+            </div>
+            <div class="question-container">
+                <div class="question-number" id="questionNumber"></div>
+                <div class="question-text" id="questionText"></div>
+                <div class="answers" id="answersContainer"></div>
+            </div>
+        </div>
+
+        <!-- Result Screen -->
+        <div class="result-screen">
+            <div class="result-container">
+                <div class="result-emoji" id="resultEmoji"></div>
+                <h2 class="result-title" id="resultTitle"></h2>
+                <p class="result-score" id="resultScore"></p>
+                <p class="result-description" id="resultDescription"></p>
+                <div class="result-traits" id="resultTraits"></div>
+                <button class="btn" onclick="restartQuiz()">Take Quiz Again 🔄</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
